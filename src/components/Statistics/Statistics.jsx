@@ -4,11 +4,10 @@ import { SectionUL } from './Statistics.styled';
 import { SectionLi } from './Statistics.styled';
 import { SectionSpan } from './Statistics.styled';
 import { H2 } from './Statistics.styled';
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <Section>
-      <H2>Upload stats</H2>
-
+      {title ?? <H2>{title}</H2>}
       <SectionUL>
         {stats.map(stats => (
           <SectionLi key={stats.id}>

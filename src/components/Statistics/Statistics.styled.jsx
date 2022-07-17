@@ -9,7 +9,9 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
 `;
-export const H2 = styled.h2``;
+export const H2 = styled.h2`
+  font-weight: bold;
+`;
 export const SectionUL = styled.ul`
   padding: 0;
   list-style: none;
